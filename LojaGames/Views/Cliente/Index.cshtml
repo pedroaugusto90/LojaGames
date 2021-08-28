@@ -1,0 +1,66 @@
+﻿@model LojaGames.Models.Cliente
+@{
+    ViewBag.Title = "Cliente";
+}
+
+<h2>Cadastro de Cliente</h2>
+@using (Html.BeginForm())
+
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NomeCliente)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NomeCliente)
+            @Html.ValidationMessageFor(model => model.NomeCliente)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CPFCliente)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CPFCliente)
+            @Html.ValidationMessageFor(model => model.CPFCliente)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CliDtNasc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CliDtNasc)
+            @Html.ValidationMessageFor(model => model.CliDtNasc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EmailCliente)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EmailCliente)
+            @Html.ValidationMessageFor(model => model.EmailCliente)
+
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CelCliente)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CelCliente)
+            @Html.ValidationMessageFor(model => model.CelCliente)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EnderecoCliente)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EnderecoCliente)
+            @Html.ValidationMessageFor(model => model.EnderecoCliente)
+        </div>
+
+        <div>
+            <br />
+            <input type="submit" value="Cadastrar" />
+        </div>
+
+    </fieldset>
+}

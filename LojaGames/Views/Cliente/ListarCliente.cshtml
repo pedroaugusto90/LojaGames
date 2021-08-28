@@ -1,0 +1,34 @@
+﻿@model LojaGames.Models.Cliente
+@{
+    ViewBag.Title = "ListarCliente";
+}
+
+<h2>Listar Cliente</h2>
+<fieldset>
+    <div class="editor-label">@Html.DisplayNameFor(model => model.NomeCliente) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.NomeCliente)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.CPFCliente) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.CPFCliente)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.CliDtNasc) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.CliDtNasc)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.EmailCliente) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.EmailCliente)</div>
+    <br /><br />
+
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.CelCliente) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.CelCliente)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.EnderecoCliente) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.EnderecoCliente)</div>
+    <br /><br />
+
+    @Html.ActionLink("Voltar", "Index", "Home")
+</fieldset>
